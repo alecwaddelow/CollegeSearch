@@ -1,0 +1,370 @@
+
+
+
+
+/*
+  Container to guesstimate the size of the phone's screen
+----------
+*/
+
+.phone-cont {
+    width: 410px;
+    max-width: 100%;
+    height: 700px;
+    max-height:100%;
+    overflow: hidden;
+    background-color: #1e1e1e;
+}
+
+
+
+/*
+ Style for NAVIGATION bar
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.nav {
+    width: 100%;
+    height: 8%;
+    display: block;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+    /* Background gradient */
+    background: linear-gradient(#222222, #1e1e1e 33%, #222222 66%);
+}
+.nav::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /* hide shadow behind image */
+    box-shadow: 0 1px 30px 5px rgba(34,34,34,0.3);
+    width: 100%;
+    left: 0;
+    height: 10px;
+    bottom: 0;
+
+}
+
+.n-nb {
+    width: 47px;
+    max-width: 15%;
+    height: 40px;
+    max-height: 75%;
+    display: inline-block;
+    float: left;
+    padding: 1px 3px 1px 3px;
+    margin: 10px 0 0 5%;
+    background-color: #000000;
+    border: 1px solid white;
+    border-radius: 15%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px #000000, -1px -1px 1px #000000;
+}
+
+.n-nb-b {
+    width: 35px;
+    max-width: 85%;
+    height: 5px;
+    max-height: 20%;
+    background-color: white;
+    margin: 13% auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.n-fac {
+    width: 785px;
+    max-width: 80%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding: 0;
+    margin: 10px 0 0 0;
+    background-color: transparent;
+
+}
+
+.n-fac h1 {
+    font-family: 'verdana', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    line-height: 1.0em;
+    text-align: center;
+    text-shadow: 1px 1px 1px black, -1px -1px -1px black;
+    font-weight: 500;
+    margin: 3px 0 10px -20%;
+    padding: 0;
+}
+
+
+
+
+
+
+/*
+ Style for tab bar
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.tc  {
+    width: inherit;
+    max-width: 100%;
+    height: 10%;
+    background-color: #1e1e1e;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.t  {
+    width: 25%;
+    height: 80%;
+    display: inline-block;
+    margin: 5% auto 5% auto;
+    padding: 0;
+    float: left;
+    background-color: #1e1e1e;
+    box-sizing: border-box;
+}
+
+.ti {
+    max-width: 60px;
+    max-height: 40px;
+    height: auto;
+    display: block;
+    margin: 5px auto 0 auto;
+    opacity: 0.9 ;
+}
+
+
+
+
+.t-sc {
+
+}
+
+.t-fa {
+    border-left: 1px solid #4d4d4d;
+}
+
+
+.t-lc {
+
+
+    border-left: 1px solid #4d4d4d;
+}
+
+.t-rp {
+
+    border-left: 1px solid #4d4d4d;
+}
+
+.t-active {
+    opacity: 0.8;
+
+}
+
+
+
+/* Style for Google Icons */
+
+
+.material-icons.md-48 {
+    opacity: 0.9;
+    font-size:  40px;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px auto;
+    padding: 0;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Style for Home Page
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+.hp {
+    width: 850px;
+    max-width: 100%;
+    height: 1400px;
+    max-height: 81%;
+    position: relative;
+    z-index: 1;
+    padding: 10px 0 0 0;
+    box-sizing: border-box;
+    margin: auto;
+    background: #e8e8e8 radial-gradient(#bfbfbf, #ffffff ) ;
+
+}
+
+/* Class for all buttons */
+
+.hp-b {
+    width: 850px;
+    max-width: 80%;
+    height: 500px;
+    max-height: 29%;
+    display: block;
+    margin: 0 auto 5% auto;
+    padding: 0;
+    border-radius: 1%;
+    position: relative;
+    z-index: 2;
+}
+
+.hp-b::after {
+    content: '';
+    position: absolute;
+    background: transparent;
+    z-index: 1; /* hide shadow behind image */
+    box-shadow: 0 0 5px rgba(34,34,34,0.8);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+
+}
+
+/* Color Classes for each button */
+
+
+.hp-sc {
+    background-color: #00294b;
+    margin-top: 2%;
+}
+
+.hp-fa {
+    background-color: #ff9400;
+}
+
+
+.hp-lc  {
+    background-color: #11607e;
+}
+
+
+/* styles for Button Icons & icon containers */
+
+.hp-bic {
+    width: 1000px;
+    max-width: 100%;
+    height: 50%;
+    max-height: 50%;
+    display: block;
+    margin: auto;
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+
+}
+
+
+.hp-bi {
+    max-width: 30%;
+    max-height: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 5% 0;
+    -webkit-filter: drop-shadow(2px 2px 0px rgba(34,34,34,0.5));
+    filter: drop-shadow(0px 0px 50px #000000);
+}
+
+
+/* Styles for button text & button text container */
+
+
+.hp-btc {
+    width: 100%;
+    max-width: 100%;
+    height: 50%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    padding: 0;
+    background-color: transparent;
+
+}
+
+
+.hp-bt {
+    font-family: 'arial', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    line-height: 1.2em;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgba(34,34,34,0.9);
+    margin: 10% 0 10% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Quick copy and paste
+
+
+	font-family: 'verdana', sans-serif;
+	font-size: 0.8em;
+	color: white;
+	line-height: 1.0em;
+	text-align: center;
+	text-shadow: 1px 1px 1px black, -1px -1px -1px black;
+	font-weight: 500;
+
+
+
+
+
+
+
+
+.	{
+
+
+}
+
+
+
+*/
